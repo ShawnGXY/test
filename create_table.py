@@ -9,7 +9,7 @@ app_ctx = app.app_context()
 
 # __enter__ with app_ctx 返回的 push
 # 把App,g 通过LocalStack放入Local
-# 离线脚步
+# 离线脚本
 with app_ctx:
     db.create_all()
     # db.drop_all()
